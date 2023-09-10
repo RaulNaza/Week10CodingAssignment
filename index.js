@@ -1,3 +1,5 @@
+//Styling using Javascript. Adding this to make small changes to the Bootstrap CSS styling.
+
 let myTable = document.getElementById('table1');
 myTable.border = "1";
 myTable.style.fontSize = "25px";
@@ -23,3 +25,16 @@ tData.style.fontSize = '18px';
 
 let myForm = document.getElementById('form1');
 myForm.style.fontSize = "20px";
+
+//Giving functionality to the buttons.
+
+//Add button to add a row.
+
+let addBtn = document.getElementById('addBtn');
+
+addBtn.addEventListener('click', addRow());
+
+function addRow () {
+    console.log(myTable.append(document.createElement('td')));
+}
+
