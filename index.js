@@ -28,13 +28,17 @@ myForm.style.fontSize = "20px";
 
 //Giving functionality to the buttons.
 
+let id = 0;
+
 //Add button to add a row.
 
 let addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click', () => {
+    let row = myTable.insertRow(1);
+    row.setAttribute('id', `item-${id}`);
+    row.insertCell(0).innerHTML = document.getElementById('firstName').value;
+    row.insertCell(1).innerHTML = document.getElementById('lastName').value;
+    row.insertCell(2).innerHTML = document.getElementById('department').value;
+});
 
-addBtn.addEventListener('click', addRow());
-
-function addRow () {
-    console.log(myTable.append(document.createElement('td')));
-}
 
