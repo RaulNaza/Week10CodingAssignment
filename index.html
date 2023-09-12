@@ -9,21 +9,23 @@
 </head>
 <body>
 
-
+    <!-- This creates a table with a heading and some fixed data to start. Using JS we will 
+    also be able to add functionality to the "Add" button which will create additional rows. -->
+    
     <div class="container-sm">
         <table id="table1" class="table table-striped">
             <thead>
                 <tr>
                     <td id="tableHeading" colspan="100" class="text-uppercase fs-1">Employee's Departments</td>
                 </tr>
+            </thead>
+            <tbody class="fs-4">
                 <tr id="dataHeading">
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Department</th>
                 </tr>
-            </thead>
-            <tbody>
-                <tr id="data">
+                <tr id="fixedData">
                     <td>Raul</td>
                     <td>Nazario</td>
                     <td>Finance</td>
@@ -33,6 +35,7 @@
     </div>
     <br>
     <br>
+    <!-- Form which will take in 3 inputs and add them to the table above -->
     <div class="container-sm">
         <form id="form1" class="form">
             <label for="firstName">First Name</label>
@@ -45,7 +48,7 @@
     </div>
 
     <br>
-
+    <!-- This will be the button used on the webpage to add rows to the table -->
     <div class="container">
         <div class="btn-group btn-group-lg">
             <button id="addBtn" class="btn btn-outline-primary">Add</button>
