@@ -47,4 +47,4 @@ delBtn.addEventListener('click', () => {
 //Used to clear the form boxed after the add button is clicked. This is cleaner for the user.
 function clearForm () {
     document.getElementById('form1').reset()
-}
+};
