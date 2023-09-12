@@ -1,6 +1,6 @@
 
 //the below variable will be used to access the table element
-let myTable = document.getElementById('table1');
+let myTablte = document.getElementById('able1');
 
 // declaring variable tHeading which takes in the element with id 'tableHeading'
 let tHeading = document.getElementById('tableHeading');
@@ -22,8 +22,6 @@ let thElements = document.getElementsByTagName('th');
 let myForm = document.getElementById('form1');
 myForm.style.fontSize = "20px";
 
-//Giving functionality to the buttons.
-let id = 0;
 
 //addBtn is a variable being assigned the value to element with id 'addBtn' in this case the on button on the page.
 let addBtn = document.getElementById('addBtn');
